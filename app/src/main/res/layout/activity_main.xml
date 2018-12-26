@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#7FB3D5">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#7FB3D5"
+        >
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="#D4E6F1"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:background="@drawable/check_border"
+                android:gravity="center"
+                android:text="Check in" />
+
+            <Button
+                android:id="@+id/map_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="135dp"
+                android:background="@drawable/check_border"
+                android:gravity="center"
+                android:text="see map" />
+
+            <Button
+                android:id="@+id/auto_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/check_border"
+                android:gravity="center"
+                android:text="auto check in" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="longitude"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="latitude"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+<!--
+        <TextView
+            android:id="@+id/delay_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+-->
+
+        <ListView
+            android:id="@+id/location_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:cacheColorHint="#00000000"
+            android:divider="#F1F1F1"
+            android:dividerHeight="1dp"
+            android:overScrollMode="never"
+            android:background="#EAF2F8"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
